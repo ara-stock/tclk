@@ -113,7 +113,7 @@ The same rules ship as JSON Schema 2020-12 in `schema/tclk1-frames.schema.json`.
 unknown. Register every `x-tclk-*` keyword the schema uses before compiling it:
 
 ```ts
-import Ajv2020 from "ajv/dist/2020.js";
+import { Ajv2020 } from "ajv/dist/2020.js";
 
 const keywords = new Set<string>();
 JSON.stringify(schema, (key, value) => {
